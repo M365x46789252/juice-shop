@@ -330,7 +330,7 @@
       "apiVersion": "2021-11-01-preview",
       "name": "[format('{0}/AllowAllWindowsAzureIps', variables('sqlUniqueName'))]",
       "dependsOn": [
-        "[resourceId('Microsoft.Sql/servers', variables('sqlUniqueName')))]"
+        "[resourceId('Microsoft.Sql/servers', variables('sqlUniqueName'))]"
       ],
       "properties": {
         "endIpAddress": "255.255.255.255",
